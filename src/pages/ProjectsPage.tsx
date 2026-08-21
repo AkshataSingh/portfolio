@@ -26,14 +26,14 @@ const projects: Project[] = [
 
 function ProjectsPage() {
   return (
-    <section className="mx-auto max-w-3xl px-6 py-12">
+    <section className="mx-auto max-w-3xl px-2 py-6 sm:px-6 sm:py-12">
       <h1 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100">Projects</h1>
       <div className="flex flex-col gap-5">
         {projects.map((p) => (
           <article
             key={p.title}
             className={
-              'rounded-xl border p-6 ' +
+              'rounded-xl border p-4 sm:p-6 ' +
               (p.comingSoon
                 ? 'border-dashed border-gray-300 bg-gray-50/60 opacity-60 dark:border-gray-700 dark:bg-gray-900/40'
                 : 'border-gray-200 bg-gray-50 dark:border-gray-800 dark:bg-gray-900')

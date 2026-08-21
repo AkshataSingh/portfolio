@@ -48,13 +48,13 @@ const jobs: Job[] = [
 
 function ExperiencePage() {
   return (
-    <section className="mx-auto max-w-3xl px-6 py-12">
+    <section className="mx-auto max-w-3xl px-2 py-6 sm:px-6 sm:py-12">
       <h1 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100">Experience</h1>
       <div className="flex flex-col gap-5">
         {jobs.map((job) => (
           <article
             key={job.title + job.company}
-            className="rounded-xl border border-gray-200 bg-gray-50 p-6 dark:border-gray-800 dark:bg-gray-900"
+            className="rounded-xl border border-gray-200 bg-gray-50 p-4 dark:border-gray-800 dark:bg-gray-900 sm:p-6"
           >
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{job.title}</h2>

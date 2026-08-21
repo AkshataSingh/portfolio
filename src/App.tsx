@@ -11,7 +11,7 @@ function App() {
       <BackgroundEffect />
       <Navbar />
       <main className="p-4 sm:p-6">
-        <div className="rounded-xl border border-dashed border-border bg-card p-6">
+        <div className="rounded-xl border border-dashed border-border bg-card p-4 sm:p-6">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/experience" element={<ExperiencePage />} />

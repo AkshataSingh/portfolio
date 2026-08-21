@@ -7,13 +7,13 @@ function Home() {
     'oled:hover:from-white oled:hover:to-white oled:hover:text-black oled:hover:shadow-none'
 
   return (
-    <section className="mx-auto mt-16 max-w-2xl px-6 text-center">
+    <section className="mx-auto mt-8 max-w-2xl px-4 text-center sm:mt-16 sm:px-6">
       <img
         src="/profile.jpeg"
         alt="Akshata Singh"
-        className="mx-auto mb-4 h-72 w-72 rounded-full border-4 border-wine object-cover object-top dark:border-wine-dark oled:border-white"
+        className="mx-auto mb-4 h-40 w-40 rounded-full border-4 border-wine object-cover object-top dark:border-wine-dark oled:border-white sm:h-56 sm:w-56 md:h-72 md:w-72"
       />
-      <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">Akshata Singh</h1>
+      <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 sm:text-3xl">Akshata Singh</h1>
       <p className="mt-1 font-semibold text-wine dark:text-wine-dark oled:text-white">
         Full Stack Developer &amp; AI Engineer
       </p>
