@@ -58,7 +58,7 @@ function ExperiencePage() {
           >
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{job.title}</h2>
-              <span className="text-sm text-gray-500 dark:text-gray-400">{job.dates}</span>
+              <span className="text-sm text-gray-600 dark:text-gray-400">{job.dates}</span>
             </div>
             <p className="mb-3 mt-1 font-medium text-wine dark:text-wine-dark oled:text-white">{job.company}</p>
             <ul className="list-disc space-y-1.5 pl-5 text-gray-600 dark:text-gray-300">

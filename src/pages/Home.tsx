@@ -7,7 +7,7 @@ function Home() {
     'oled:hover:from-white oled:hover:to-white oled:hover:text-black oled:hover:shadow-none'
 
   return (
-    <section className="mx-auto mt-8 max-w-2xl px-4 text-center sm:mt-16 sm:px-6">
+    <section className="mx-auto mt-0 max-w-2xl px-4 text-center sm:mt-1 sm:px-6">
       <img
         src="/profile.jpeg"
         alt="Akshata Singh"
@@ -43,11 +43,13 @@ function Home() {
         </a>
       </div>
 
-      <p className="leading-relaxed text-gray-500 dark:text-gray-400">
+      <p className="leading-relaxed text-gray-600 dark:text-gray-400">
         Full Stack Developer with 4+ years of experience building production web applications
         and AI-powered systems using React, Node.js, TypeScript and Python. Architected a
         multi-agent AI platform integrating Claude and OpenAI APIs, and shipped production
-        platforms in financial services.
+        platforms in financial services. Also researching low-level machine learning systems,
+        including model compression, quantization, and inference optimization for real-time AI
+        applications.
       </p>
     </section>
   )

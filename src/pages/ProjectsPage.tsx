@@ -43,7 +43,7 @@ function ProjectsPage() {
           >
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{p.title}</h2>
-              <span className="text-sm text-gray-500 dark:text-gray-400">{p.dates}</span>
+              <span className="text-sm text-gray-600 dark:text-gray-400">{p.dates}</span>
             </div>
             <ul className="mt-3 list-disc space-y-1.5 pl-5 text-gray-600 dark:text-gray-300">
               {p.bullets.map((b) => (
