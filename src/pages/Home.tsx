@@ -26,7 +26,7 @@ function Home() {
           +44 7747231464
         </a>
         <a
-          href="https://linkedin.com/in/AkshataSingh"
+          href="https://www.linkedin.com/in/akshata-singh-89b83b194/"
           target="_blank"
           rel="noreferrer"
           className={contactLinkClass}
