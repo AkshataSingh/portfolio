@@ -8,7 +8,7 @@ type Job = {
 const jobs: Job[] = [
   {
     title: 'AI Engineer / Full Stack Developer',
-    company: 'Confidential Client',
+    company: 'Confidential Client, UK',
     dates: 'June 2026 – August 2026',
     bullets: [
       'Architected a multi-agent orchestration engine from scratch as one of two engineers, designing 5 specialised agents that pass structured output between stages via a shared context store.',
