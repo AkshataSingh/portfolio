@@ -3,6 +3,7 @@ type Job = {
   company: string
   dates: string
   bullets: string[]
+  technologies: string[]
 }
 
 const jobs: Job[] = [
@@ -11,30 +12,36 @@ const jobs: Job[] = [
     company: 'Confidential Client, UK',
     dates: 'June 2026 – August 2026',
     bullets: [
-      'Architected a multi-agent orchestration engine from scratch as one of two engineers, designing 5 specialised agents that pass structured output between stages via a shared context store.',
+      'Architected a multi-agent orchestration engine from scratch as one of two engineers, designing 5 specialised agents on a shared engine, with a Context Registry enabling automated cross-agent data handoffs.',
       'Built a provider-agnostic adapter integrating Claude and OpenAI APIs, with real-time streaming (SSE), tool-calling, and a PostgreSQL schema persisting agent state and token usage.',
+      'Built automation layers including phase detection and synthesis pipelines, plus admin dashboards for LLM usage monitoring and prompt management, proactively structuring ambiguous problems into clear technical workflows.',
     ],
+    technologies: ['TypeScript', 'React', 'Vite', 'Node.js', 'Claude API', 'OpenAI API', 'PostgreSQL', 'SSE'],
   },
   {
     title: 'Software Developer',
     company: 'HDFC Ergo General Insurance Company Ltd., Mumbai',
     dates: 'May 2024 – January 2025',
     bullets: [
+      'Designed and developed a customer-facing insurance purchase platform end to end using React.js, Next.js and Node.js, translating business requirements into clear technical specifications and workflows.',
+      'Built and maintained RESTful APIs in Node.js and Express.js for insurance workflows, including authentication, authorisation and data retrieval from SQL and NoSQL stores.',
       'Designed and implemented a GenAI-powered backend using Python and FastAPI, integrating LLM APIs into a production employee chatbot.',
-      'Designed and developed a customer-facing insurance purchase platform using React.js, Next.js and Node.js.',
-      'Built interactive dashboards using React.js and Node.js for IT administrators and insurance providers.',
+      'Collaborated with data and analytics teams, using Python and SQL to prepare and analyse datasets feeding into dashboards and reporting.',
       'Implemented Redis-based session management for login, improving authentication performance and reliability.',
     ],
+    technologies: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'Python', 'FastAPI', 'SQL', 'Redis'],
   },
   {
     title: 'Software Developer',
     company: 'Reliance Nippon Life Insurance, Mumbai',
     dates: 'January 2023 – April 2024',
     bullets: [
-      'Conceived, designed and built a QR-based attendance and fraud-prevention system entirely on my own, front end and back end, including login logic distinguishing internal hierarchy staff from external advisors, combined with geo-location checks.',
-      'Developed backend services for the SA3 application using Node.js and MongoDB in a microservice-based architecture.',
-      'Wrote optimised SQL queries, improving data-fetch performance by 20 seconds.',
+      'Developed backend services for the SA3 application using Node.js and MongoDB in a microservice-based architecture, designing and maintaining REST APIs that supported internal operational workflows.',
+      'Wrote optimised SQL queries for extracting hierarchical data and generating performance reports, improving data fetch performance by 20 seconds.',
+      'Integrated third-party APIs, including SMS and email notification services, and handled webhooks to automate data collection and notifications.',
+      'Implemented a responsive QR-based attendance web application using React.js and Node.js, reducing fraud via geo-location checks.',
     ],
+    technologies: ['Node.js', 'MongoDB', 'SQL', 'React.js'],
   },
   {
     title: 'Engineer',
@@ -43,6 +50,7 @@ const jobs: Job[] = [
     bullets: [
       'Supported enterprise clients by creating and managing servers, checking logs and reviewing system health on cloud infrastructure, resolving incidents to ensure high availability.',
     ],
+    technologies: ['Cloud Infrastructure'],
   },
 ]
 
@@ -59,6 +67,9 @@ function ExperiencePage() {
             <h2>{job.title}</h2>
             <p className="card-company">{job.company}</p>
             <ul>{job.bullets.map(b => <li key={b}>{b}</li>)}</ul>
+            <div className="tech-tags">
+              {job.technologies.map(tech => <span key={tech} className="tech-tag">{tech}</span>)}
+            </div>
           </article>
         ))}
       </div>
