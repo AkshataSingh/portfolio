@@ -304,6 +304,9 @@ body {
 [data-theme='light'] .project-link { color: #85223f; background: #fffaf6db; border-color: #956777; }
 [data-theme='light'] .project-link:hover { background: #fff7fb; }
 [data-theme='light'] .project-link:focus-visible { outline-color: #85223f; }
+.tech-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.tech-tag { padding: 5px 12px; border-radius: 999px; background: #ffffff0f; border: 1px solid #ffffff1a; color: #c3c8cc; font-size: 12px; letter-spacing: .04em; }
+[data-theme='light'] .tech-tag { background: #85223f0d; border-color: #85223f26; color: #654051; }
 .detail-stack .detail-card {
   border: 0;
   background: linear-gradient(135deg, #ffffff12, #ffffff04), #151c2373;
